@@ -57,8 +57,10 @@ const App = () => {
         "",
         "",
         "",
-      ].map(() => (
-        <div className="text-3xl">Hello World</div>
+      ].map((_: string, i: number) => (
+        <div key={i} className="text-3xl">
+          Hello World
+        </div>
       ))}
     </Layout>
   );
