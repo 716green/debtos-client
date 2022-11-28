@@ -2,6 +2,7 @@
 // import { GlobalContext } from "@/context";
 // import { User } from "@supabase/supabase-js";
 // import { GlobalState } from "./context/types";
+import Layout from "@/views/Layout";
 
 const App = () => {
   // const { user, setUser } = useContext<GlobalState>(GlobalContext);
@@ -24,7 +25,43 @@ const App = () => {
   //   setUser(usr);
   // };
 
-  return <div className="text-3xl">Hello World</div>;
+  return (
+    <Layout>
+      {[
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+      ].map(() => (
+        <div className="text-3xl">Hello World</div>
+      ))}
+    </Layout>
+  );
 };
 
 export default App;
